@@ -1,10 +1,28 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lava Axis - موسوعة كرتون</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+  <title>Lava Axis</title>
+  <meta name="description" content="اكتشف كرتون Lava Axis: مغامرات مايكي القط البرتقالي في عالم سحري مليء بالحمم والشر. تعرف على الشخصيات والإنتاج.">
+  <meta name="keywords" content="Lava Axis, مايكي, كرتون, كرتون عربي, كرتون أكشن, فانتازيا, كرتون جديد, Mohammed Amin, Rabbit">  <meta property="og:title" content="Lava Axis - كرتون أكشن وفانتازيا خيالي">
+  <meta property="og:description" content="قصة مايكي، القط البركاني، وأصدقاؤه في مغامرات لحماية المدينة من قوى الشر.">
+  <meta property="og:image" content="https://yourdomain.com/poster.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">  <link rel="canonical" href="https://yourdomain.com">  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TVSeries",
+    "name": "Lava Axis",
+    "genre": ["Action", "Fantasy", "Adventure", "Animation"],
+    "creator": {
+      "@type": "Person",
+      "name": "Mohammed Amin"
+    },
+    "image": "https://yourdomain.com/poster.png",
+    "description": "كرتون Lava Axis يحكي قصة مايكي القط البرتقالي الذي يخرج حممًا بركانية، يحارب قوى الشر في عالم سحري مليء بالمخلوقات العجيبة.",
+    "dateCreated": "2025"
+  }
+  </script>  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
   <style>
     :root {
       --main-color: #ff4500;
@@ -13,197 +31,230 @@
       --secondary-color: #ff6347;
       --card-bg: #2b1c1c;
       --accent-color: #ffd700;
-    }
+    }html {
+  scroll-behavior: smooth;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 0 20px;
+  line-height: 1.6;
+  direction: rtl;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      padding: 0 20px;
-      line-height: 1.6;
-      direction: rtl;
-    }
+header {
+  background: linear-gradient(to right, #400000, #8b0000);
+  color: white;
+  padding: 30px 20px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    header {
-      background: linear-gradient(to right, #400000, #8b0000);
-      color: white;
-      padding: 30px 20px;
-      text-align: right;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+.logo-container {
+  max-width: 70%;
+}
 
-    .logo-container {
-      max-width: 70%;
-    }
+.logo {
+  font-size: 3em;
+  color: var(--accent-color);
+}
 
-    .logo {
-      font-size: 3em;
-      color: var(--accent-color);
-    }
+.poster-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
 
-    .poster-img {
-      width: 200px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    }
+nav {
+  background-color: #2d0d0d;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    nav {
-      background-color: #2d0d0d;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+nav a:hover {
+  color: var(--accent-color);
+}
 
-    nav a:hover {
-      color: var(--accent-color);
-    }
+section {
+  margin: 30px auto;
+  max-width: 900px;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+}
 
-    section {
-      margin: 30px auto;
-      max-width: 900px;
-      background-color: var(--card-bg);
-      padding: 20px;
-      border-radius: 10px;
-    }
+h2 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
 
-    h2 {
-      color: var(--main-color);
-      margin-bottom: 10px;
-    }
+.character {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-    .character {
-      margin-bottom: 15px;
-      border-bottom: 1px solid #444;
-      padding-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+.character img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
-    .character img {
-      width: 100px;
-      height: auto;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
+.character img:hover {
+  transform: scale(1.1);
+}
 
-    .character img:hover {
-      transform: scale(1.1);
-    }
+footer {
+  background-color: #2d0d0d;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.95em;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+}
+
   </style>
 </head>
-<body>
-
-  <header>
+<body>  <header>
     <div class="logo-container">
       <div class="logo">Lava Axis</div>
       <p>كرتون أكشن - مغامرة - فانتزيا - خيال</p>
     </div>
-    <img src="poster.png" alt="بوستر الكرتون" class="poster-img">
-  </header>
-
-  <nav>
+    <img src="poster.png" alt="بوستر كرتون Lava Axis" class="poster-img">
+  </header>  <nav>
     <a href="#overview">الملخص</a>
     <a href="#characters">الشخصيات</a>
     <a href="#production">الإنتاج</a>
-  </nav>
-
-  <section id="overview">
+  </nav>  <section id="overview">
     <h2>ملخص القصة</h2>
     <p>
       تدور أحداث كرتون <strong>Lava Axis</strong> حول "مايكي"، قط برتقالي يعيش في مدينة تجمع بين البشر والحيوانات والمخلوقات الغريبة، في عالم خيالي مليء بالعجائب والتحديات. مايكي يتمتع بقدرة على إخراج الحمم البركانية من جسده، ويستخدم هذه القوة لحماية المدينة والعالم من قوى الشر التي تهددهما.
     </p>
-  </section>
+  </section>  <section id="characters">
+    <h2>الشخصيات الرئيسية</h2><div class="character">
+  <img src="mike.png" alt="Mickey the Cat - مايكي القط البرتقالي" />
+  <div>
+    <strong>Mickey the Cat</strong><br>
+    العمر: 18 - ذكر<br>
+    قط برتقالي يخرج الحمم البركانية من يده أو قدمه أو ذيله. متسرع ويحب المغامرة. طالب في الصف الثالث الثانوي.
+  </div>
+</div>
 
-  <section id="characters">
-    <h2>الشخصيات الرئيسية</h2>
+<div class="character">
+  <div>
+    <strong>Firn the Water</strong><br>
+    العمر: 18 - ذكر<br>
+    أمير مملكة الماء، حكيم وهادئ، يتحكم بالماء ويستطيع التضخم، ترك مملكته ليلتحق بالثانوية.
+  </div>
+</div>
 
-    <div class="character">
-      <img src="mike.png" alt="Mickey" />
-      <div>
-        <strong>Mickey the Cat</strong><br>
-        العمر: 18 - ذكر<br>
-        قط برتقالي يخرج الحمم البركانية من يده أو قدمه أو ذيله. متسرع ويحب المغامرة. طالب في الصف الثالث الثانوي.
-      </div>
-    </div>
+<div class="character">
+  <div>
+    <strong>Selva the Cat</strong><br>
+    العمر: 18 - أنثى<br>
+    قطة بيضاء تسخر المادة وتساعد مايكي في المدرسة. شخصية متفائلة ومليئة بالحيوية.
+  </div>
+</div>
 
-    <div class="character">
-      <div>
-        <strong>Firn the Water</strong><br>
-        العمر: 18 - ذكر<br>
-        أمير مملكة الماء، حكيم وهادئ، يتحكم بالماء ويستطيع التضخم، ترك مملكته ليلتحق بالثانوية.
-      </div>
-    </div>
+<div class="character">
+  <div>
+    <strong>Zanthor the Wolf</strong><br>
+    العمر: 25 - ذكر<br>
+    مقاتل ومخترع قديم، عاش لآلاف السنين وكان محجوزًا في حاجز زمني. قوي وذكي وله أسطورة مع أخيه.
+  </div>
+</div>
 
-    <div class="character">
-      <div>
-        <strong>Selva the Cat</strong><br>
-        العمر: 18 - أنثى<br>
-        قطة بيضاء تسخر المادة وتساعد مايكي في المدرسة. شخصية متفائلة ومليئة بالحيوية.
-      </div>
-    </div>
+<div class="character">
+  <div>
+    <strong>Ziron the Wolf</strong><br>
+    العمر: آلاف السنين - ذكر<br>
+    توأم زانثور، يبدو طيبًا لكنه في الحقيقة الشرير. قوي وذكي، شرب عقارًا سحريًا ليبقى حيًا.
+  </div>
+</div>
 
-    <div class="character">
-      <div>
-        <strong>Zanthor the Wolf</strong><br>
-        العمر: 25 - ذكر<br>
-        مقاتل ومخترع قديم، عاش لآلاف السنين وكان محجوزًا في حاجز زمني. قوي وذكي وله أسطورة مع أخيه.
-      </div>
-    </div>
+<div class="character">
+  <div>
+    <strong>Valcon the Owl</strong><br>
+    العمر: 30 - ذكر<br>
+    بومة عبقري شرير بخطط دقيقة، لكن مايكي يفسدها غالبًا. لديه قوة عضلية غير متوقعة.
+  </div>
+</div>
 
-    <div class="character">
-      <div>
-        <strong>Ziron the Wolf</strong><br>
-        العمر: آلاف السنين - ذكر<br>
-        توأم زانثور، يبدو طيبًا لكنه في الحقيقة الشرير. قوي وذكي، شرب عقارًا سحريًا ليبقى حيًا.
-      </div>
-    </div>
+<div class="character">
+  <div>
+    <strong>Pyra the Fire</strong><br>
+    العمر: 26 - أنثى<br>
+    ملكة النار، شخصية نارية ومندفعة، تمثل العنصر الناري النقي.
+  </div>
+</div>
 
-    <div class="character">
-      <div>
-        <strong>Valcon the Owl</strong><br>
-        العمر: 30 - ذكر<br>
-        بومة عبقري شرير بخطط دقيقة، لكن مايكي يفسدها غالبًا. لديه قوة عضلية غير متوقعة.
-      </div>
-    </div>
-
-    <div class="character">
-      <div>
-        <strong>Pyra the Fire</strong><br>
-        العمر: 26 - أنثى<br>
-        ملكة النار، شخصية نارية ومندفعة، تمثل العنصر الناري النقي.
-      </div>
-    </div>
-  </section>
-
-  <section id="production">
+  </section>  <section id="production">
     <h2>الإنتاج</h2>
     <p><strong>Rabbit & Mohammed Amin</strong> : المؤلف </p>
     <p><strong>Mohammed Amin & nyuyaki</strong> : المخرج </p>
     <p><strong>سنة الإصدار:</strong> بين 2025 و 2027</p>
     <p><strong>Zentura & Wakyo & souly</strong>: إنتاج </p>
     <p>عدد الحلقات والمواسم لم يُعلن عنه بعد.</p>
-  </section>
-
-</body>
+  </section>  <footer>
+    <h2 style="color: var(--accent-color); margin-bottom: 10px;">Lava Axis</h2>
+    <p style="margin-bottom: 20px;">© 2025 جميع الحقوق محفوظة لـ <strong>Voxar</strong>.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/animaster_channel?igsh=MWt6emI2NTFtNTcxYQ==" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Mohammed Amin
+      </a>
+      <a href="https://www.instagram.com/nyuyaki?igsh=dHlqd2ZxcDd6NG5h" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Nyuyaki
+      </a>
+      <a href="https://www.instagram.com/souly_studios?igsh=YW54b2tnMjdyamt6" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Souly
+      </a>
+      <a href="https://www.instagram.com/therabbit778?igsh=azAzM3RoajV0eG41" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Rabbit
+      </a>
+    </div>
+  </footer></body>
 </html>
