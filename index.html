@@ -76,6 +76,82 @@
       --evil-bg: #ffeae6;
     }
 
+    /* ... كود التنسيقات الأساسي هنا كما هو ... */
+
+    /* 📱📺 Responsive Design */
+    @media (max-width: 768px) {
+      .studio-logos {
+        position: static;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .lava-logo {
+        width: 160px;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-container {
+        max-width: 100%;
+      }
+
+      .poster-img {
+        width: 90%;
+        margin-top: 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 8px;
+      }
+
+      .character {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .character img {
+        width: 80px;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      section {
+        max-width: 1200px;
+      }
+
+      .lava-logo {
+        width: 280px;
+      }
+
+      .poster-img {
+        width: 240px;
+      }
+
+      .studio-logo.voxar {
+        width: 230px;
+      }
+
+      .studio-logo.arua {
+        width: 130px;
+      }
+    }
+
+    
     html { scroll-behavior: smooth; }
 
     body {
