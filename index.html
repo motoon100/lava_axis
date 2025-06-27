@@ -6,49 +6,30 @@
   <title>Lava Axis</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
   <style>
-    .top-banner {
-      position: relative;
-      background-color: var(--header-bg);
-      padding: 30px 10px 20px;
-      text-align: center;
-    }
-
-    .lava-logo {
-      width: 220px;
-      aspect-ratio: 526 / 375;
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
-      display: block;
-      filter: drop-shadow(0 0 8px rgba(255, 140, 0, 0.6));
-    }
-
     .studio-logos {
       position: absolute;
       top: 15px;
       left: 20px;
       display: flex;
-      gap: 12px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px;
       align-items: center;
+      justify-content: flex-start;
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
     }
 
     .studio-logo {
+      max-height: 60px;
       height: auto;
+      width: auto;
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
-    }
-
-    /* النسب الأصلية للحجم مع تحسين العرض */
-    .studio-logo.arua {
-      width: 110px;
-      aspect-ratio: 480 / 494;
-      background-color: #ccc;
-    }
-
-    .studio-logo.voxar {
-      width: 190px;
-      aspect-ratio: 857 / 191;
-      background-color: #222222
+      object-fit: contain;
+      background-color: #fff;
+      padding: 4px;
     }
     :root {
       --main-color: #ff4500;
@@ -79,15 +60,19 @@
     /* ... كود التنسيقات الأساسي هنا كما هو ... */
 
     /* 📱📺 Responsive Design */
-    @media (max-width: 768px) {
-      .studio-logos {
-        position: static;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
-        margin-bottom: 10px;
-      }
+      @media (max-width: 768px) {
+        .studio-logos {
+          position: static;
+          flex-direction: column;
+          align-items: center;
+          background: none;
+          padding: 0;
+        }
 
+        .studio-logo {
+          max-height: 50px;
+        }
+      }
       .lava-logo {
         width: 160px;
       }
@@ -321,7 +306,6 @@
       <img src="Arua.png" alt="Arua Studio" class="studio-logo arua">
       <img src="Voxar 2.png" alt="Voxar Studio" class="studio-logo voxar">
     </div>
-    <img src="Lava Axis.png" alt="Lava Axis Logo" class="lava-logo">
   </div>
 
   <header>
