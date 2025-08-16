@@ -7,7 +7,7 @@
     <title>Lava Axis</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
     <style>
-        /* ===== شعارات الاستوديو ===== */
+            /* ===== شعارات الاستوديو ===== */
         
         .studio-logos {
             position: absolute;
@@ -363,6 +363,14 @@
                 width: 130px;
             }
         }
+        
+        .supported-title {
+            color: #87ceeb;
+            /* لون أزرق فاتح */
+            border-bottom: 2px solid #4682b4;
+            /* لون أزرق داكن للخط السفلي */
+            padding-bottom: 5px;
+            cursor: pointer;
     </style>
 </head>
 
@@ -394,113 +402,147 @@
         </p>
     </section>
     <section id="characters">
-        <h2>الشخصيات الرئيسية</h2>
-        <div class="hero-box">
-            <h3 onclick="toggleSection('heroes-content', this)" style="color: var(--accent-color); border-bottom: 2px solid var(--main-color); padding-bottom: 5px; cursor: pointer;">
-                Heros <span class="arrow">▼</span>
-            </h3>
+        <section id="characters">
+            <h2>الشخصيات الرئيسية</h2>
 
-            <!-- منطقة قابلة للتمرير عند الفتح -->
-            <div id="heroes-content" class="toggle-section" aria-live="polite">
-                <div class="character">
-                    <img src="mike.png" alt="Mickey the Cat" />
-                    <div class="info"><strong>Mickey the Cat</strong><br>العمر: 18 - ذكر<br>قط برتقالي يخرج الحمم البركانية من جسده. متسرع ويحب المغامرة.</div>
-                    <a href="Mikey.html"><button class="btn" type="button">اذهب إلى صفحة Mikey</button></a>
-                </div>
-                <div class="character">
-                    <img src="selva.png" alt="Selva the Cat" />
-                    <div class="info"><strong>Selva the Cat</strong><br>العمر: 18 - أنثى<br>قطة بيضاء تسخر المادة وتساعد مايكي. متفائلة ومليئة بالحيوية.</div>
-                    <a href="selva.html"><button class="btn" type="button">اذهب إلى صفحة Selva</button></a>
-                </div>
-                <div class="character">
-                    <img src="Ego.png" alt="Ego the Bird" />
-                    <div class="info"><strong>Ego the Bird</strong><br>العمر: 18 - ذكر<br>عصفور أزرق لديه قوي الثلج ، نحيف، طويل شاب مغرور، ذكي جدًا،</div>
-                </div>
-                <div class="character">
-                    <img src="Firn.png" alt="Firn the Water" />
-                    <div class="info"><strong>Firn the Water</strong><br>العمر: 18 - ذكر<br>أمير مملكة الماء، حكيم وهادئ. يتحكم بالماء ويستطيع التضخم.</div>
-                </div>
-                <div class="character">
-                    <img src="Zanthor.png" alt="Zanthor the Wolf" />
-                    <div class="info"><strong>Zanthor the Wolf</strong><br>العمر: 25 - ذكر<br>مقاتل قديم، قوي وذكي وله أسطورة مع أخيه.</div>
+            <!-- بطل 1 -->
+            <div class="hero-box">
+                <h3 onclick="toggleSection('hero1', this)" style="color: var(--accent-color); border-bottom: 2px solid var(--main-color); padding-bottom: 5px; cursor: pointer;">
+                    Hero protagonist<span class="arrow">▼</span>
+                </h3>
+                <div id="hero1" class="toggle-section" aria-live="polite">
+                    <div class="character">
+                        <img src="mike.png" alt="Mickey the Cat" />
+                        <div class="info"><strong>Mickey the Cat</strong><br>العمر: 18 - ذكر<br>قط برتقالي يخرج الحمم البركانية من جسده. متسرع ويحب المغامرة.</div>
+                        <a href="Mikey.html"><button class="btn" type="button">اذهب إلى صفحة Mikey</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="evil-box">
-            <h3 onclick="toggleSection('evils-content', this)" style="color: #ff4c4c; border-bottom: 2px solid #ff0000; padding-bottom: 5px; cursor: pointer;">
-                Villain<span class="arrow">▼</span>
-            </h3>
-
-            <!-- منطقة قابلة للتمرير عند الفتح -->
-            <div id="evils-content" class="toggle-section" aria-live="polite">
-                <div class="character">
-                    <img src="Valcon.png" alt="Valcon the Owl" />
-                    <div class="info"><strong>Valcon the Owl</strong><br>العمر: 30 - ذكر<br>بومة عبقري شرير بخطط دقيقة. لديه قوة عضلية غير متوقعة.</div>
-                </div>
-                <div class="character">
-                    <img src="Pyra.png" alt="Pyra the Fire" />
-                    <div class="info"><strong>Pyra the Fire</strong><br>العمر: 26 - أنثى<br>ملكة النار، شخصية نارية ومندفعة. تمثل العنصر الناري النقي.</div>
-                </div>
-                <div class="character">
-                    <img src="Ziron.png" alt="Ziron the Wolf" />
-                    <div class="info"><strong>Ziron the Wolf</strong><br>العمر: آلاف السنين - ذكر<br>توأم زانثور، شرير، ذكي، شرب عقارًا ليبقى حيًا.</div>
+            <!-- بطل 2 -->
+            <div class="hero-box">
+                <h3 onclick="toggleSection('hero2', this)" style="color: var(--accent-color); border-bottom: 2px solid var(--main-color); padding-bottom: 5px; cursor: pointer;">
+                    Duetragonist character<span class="arrow">▼</span>
+                </h3>
+                <div id="hero2" class="toggle-section" aria-live="polite">
+                    <div class="character">
+                        <img src="Ego.png" alt="Ego the Bird" />
+                        <div class="info"><strong>Ego the Bird</strong><br>العمر: 18 - ذكر<br>عصفور أزرق لديه قوي الثلج، نحيف، طويل، مغرور وذكي جدًا.</div>
+                        <a href="Ego.html"><button class="btn" type="button">اذهب إلى صفحة Ego</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-    <section id="production">
-        <h2>الإنتاج</h2>
-        <p><strong>Rabbit & Mohammed Amin</strong> : المؤلف </p>
-        <p><strong>Mohammed Amin & nyuyaki</strong> : المخرج </p>
-        <p><strong>سنة الإصدار:</strong> بين 2025 و 2027</p>
-        <p><strong> Voxar& AURA </strong>: إنتاج </p>
-        <p>عدد الحلقات والمواسم لم يُعلن عنه بعد.</p>
-    </section>
-    <footer>
-        <h2 style="color: var(--accent-color); margin-bottom: 10px;">Lava Axis</h2>
-        <p style="margin-bottom: 20px;">© 2025 جميع الحقوق محفوظة لـ <strong>Voxar</strong>.</p>
-        <div class="social-links">
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Mohammed Amin</a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Nyuyaki</a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Souly</a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Rabbit</a>
-        </div>
-    </footer>
-    <script>
-        function toggleSection(id, header) {
-            const content = document.getElementById(id);
-            const arrow = header.querySelector('.arrow');
-            const willOpen = !content.classList.contains('open');
+            <!-- بطل 3 -->
+            <div class="hero-box">
+                <h3 onclick="toggleSection('hero3', this)" style="color: var(--accent-color); border-bottom: 2px solid var(--main-color); padding-bottom: 5px; cursor: pointer;">
+                    Tritagonist character<span class="arrow">▼</span>
+                </h3>
+                <div id="hero3" class="toggle-section" aria-live="polite">
+                    <div class="character">
+                        <img src="selva.png" alt="Selva the Cat" />
+                        <div class="info"><strong>Selva the Cat</strong><br>العمر: 18 - أنثى<br>قطة بيضاء تسخر المادة وتساعد مايكي. متفائلة ومليئة بالحيوية.</div>
+                        <a href="selva.html"><button class="btn" type="button">اذهب إلى صفحة Selva</button></a>
+                    </div>
+                </div>
+            </div>
 
-            // إغلاق باقي الأقسام عند فتح واحد (اختياري)
-            document.querySelectorAll('.toggle-section').forEach(sec => {
-                if (sec !== content) sec.classList.remove('open');
-            });
+            <!-- الأشرار -->
+            <div class="evil-box">
+                <h3 onclick="toggleSection('evils-content', this)" style="color: #ff4c4c; border-bottom: 2px solid #ff0000; padding-bottom: 5px; cursor: pointer;">
+                    Villain Antagonist <span class="arrow">▼</span>
+                </h3>
+                <div id="evils-content" class="toggle-section" aria-live="polite">
+                    <div class="character">
+                        <img src="Valcon.png" alt="Valcon the Owl" />
+                        <div class="info"><strong>Valcon the Owl</strong><br>العمر: 30 - ذكر<br>بومة عبقري شرير بخطط دقيقة. لديه قوة عضلية غير متوقعة.</div>
+                    </div>
+                </div>
+            </div>
 
-            content.classList.toggle('open');
-            if (arrow) arrow.classList.toggle('rotate', willOpen);
-        }
 
-        function toggleTheme() {
-            const root = document.documentElement;
-            const isLight = root.classList.contains('light');
-            root.classList.toggle('light');
-            localStorage.setItem('theme', isLight ? 'dark' : 'light');
-            document.getElementById('themeToggle').textContent = isLight ? '☀' : '🌙';
-        }
+            <div class="hero-box">
 
-        window.onload = () => {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            if (savedTheme === 'light') {
-                document.documentElement.classList.add('light');
-                document.getElementById('themeToggle').textContent = '🌙';
-            } else {
-                document.getElementById('themeToggle').textContent = '☀';
+                <h3 onclick="toggleSection('hero4', this)" class="supported-title">
+                    Supported <span class="arrow">▼</span> </h3>
+
+                <div id="hero4" class="toggle-section" aria-live="polite">
+
+                    <div class="character">
+                        <img src="Firn.png" alt="Firn the Water" />
+                        <div class="info"><strong>Firn the Water</strong><br>العمر: 18 - ذكر<br>أمير مملكة الماء، حكيم وهادئ. يتحكم بالماء ويستطيع التضخم.</div>
+                    </div>
+
+                    <div class="character">
+                        <img src="Zanthor.png" alt="Zanthor the Wolf" />
+                        <div class="info"><strong>Zanthor the Wolf</strong><br>العمر: 25 - ذكر<br>مقاتل قديم، قوي وذكي وله أسطورة مع أخيه.</div>
+                    </div>
+
+
+                    <div class="character">
+                        <img src="Pyra.png" alt="Pyra the Fire" />
+                        <div class="info"><strong>Pyra the Fire</strong><br>العمر: 26 - أنثى<br>ملكة النار، شخصية نارية ومندفعة. تمثل العنصر الناري النقي.</div>
+                    </div>
+
+                    <div class="character">
+                        <img src="Ziron.png" alt="Ziron the Wolf" />
+                        <div class="info"><strong>Ziron the Wolf</strong><br>العمر: آلاف السنين - ذكر<br>توأم زانثور، شرير، ذكي، شرب عقارًا ليبقى حيًا.</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="production">
+            <h2>الإنتاج</h2>
+            <p><strong>Rabbit & Mohammed Amin</strong> : المؤلف </p>
+            <p><strong>Mohammed Amin & nyuyaki</strong> : المخرج </p>
+            <p><strong>سنة الإصدار:</strong> بين 2025 و 2027</p>
+            <p><strong> Voxar& AURA </strong>: إنتاج </p>
+            <p>عدد الحلقات والمواسم لم يُعلن عنه بعد.</p>
+        </section>
+        <footer>
+            <h2 style="color: var(--accent-color); margin-bottom: 10px;">Lava Axis</h2>
+            <p style="margin-bottom: 20px;">© 2025 جميع الحقوق محفوظة لـ <strong>Voxar</strong>.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Mohammed Amin</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Nyuyaki</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Souly</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"> Rabbit</a>
+            </div>
+        </footer>
+        <script>
+            function toggleSection(id, header) {
+                const content = document.getElementById(id);
+                const arrow = header.querySelector('.arrow');
+                const willOpen = !content.classList.contains('open');
+
+                // إغلاق باقي الأقسام عند فتح واحد (اختياري)
+                document.querySelectorAll('.toggle-section').forEach(sec => {
+                    if (sec !== content) sec.classList.remove('open');
+                });
+
+                content.classList.toggle('open');
+                if (arrow) arrow.classList.toggle('rotate', willOpen);
             }
-        }
-    </script>
+
+            function toggleTheme() {
+                const root = document.documentElement;
+                const isLight = root.classList.contains('light');
+                root.classList.toggle('light');
+                localStorage.setItem('theme', isLight ? 'dark' : 'light');
+                document.getElementById('themeToggle').textContent = isLight ? '☀' : '🌙';
+            }
+
+            window.onload = () => {
+                const savedTheme = localStorage.getItem('theme') || 'dark';
+                if (savedTheme === 'light') {
+                    document.documentElement.classList.add('light');
+                    document.getElementById('themeToggle').textContent = '🌙';
+                } else {
+                    document.getElementById('themeToggle').textContent = '☀';
+                }
+            }
+        </script>
 </body>
 
 </html>
